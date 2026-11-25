@@ -60,6 +60,8 @@ export const SEASON_LENGTH_SECONDS = 14 * 86400;
 // Marketplaces (collection pages exist once the contract is deployed and
 // indexed; Element is the primary BSC market).
 export const ELEMENT_URL = "https://element.market";
+export const ELEMENT_COLLECTION_URL =
+  "https://element.market/collections/0xBdd7Db43BdDB4CbE288c31A367a187B2Cae1138A";
 export const OPENSEA_URL = "https://opensea.io";
 
 // ---------------------------------------------------------------------------

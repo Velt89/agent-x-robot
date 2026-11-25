@@ -20,6 +20,7 @@ import {
   DRAW_CAP_PER_TYPE,
   DRAW_PRICE_BNB,
   DUEL_ENTRY_BNB,
+  ELEMENT_COLLECTION_URL,
   ELEMENT_URL,
   FREE_ODDS,
   LOTTERY_PRIZES_PER_SEASON,
@@ -239,6 +240,29 @@ type DuelRow = {
 type LbRow = { robotId: number; owner: string; points: number; wins: number; losses: number };
 
 type Tab = "robot" | "arena" | "leaderboard" | "howto" | "agent";
+
+type MarketStats = {
+  floorBnb: number | null;
+  vol24hBnb: number | null;
+  totalVolBnb: number | null;
+  listed: number | null;
+  owners: number | null;
+  live: boolean; // false until /api/element-stats answers with a key behind it
+};
+
+const MARKET_OFF: MarketStats = {
+  floorBnb: null,
+  vol24hBnb: null,
+  totalVolBnb: null,
+  listed: null,
+  owners: null,
+  live: false,
+};
+
+function fmtPrice(n: number | null): string {
+  if (n === null) return "—";
+  return `${Number(n.toFixed(4))} BNB`;
+}
 
 export default function App() {
   const [tab, setTab] = useState<Tab>("robot");
@@ -469,6 +493,35 @@ export default function App() {
   useEffect(() => { loadArena(); }, [loadArena]);
   useEffect(() => { loadBoard(); }, [loadBoard]);
 
+  // ---- Element market stats (via /api/element-stats; needs ELEMENT_API_KEY
+  // in Vercel env — without it the card shows dashes + the Element link) ----
+  const [market, setMarket] = useState<MarketStats | null>(null);
+  const loadMarket = useCallback(async () => {
+    try {
+      const r = await fetch("/api/element-stats");
+      if (!r.ok) {
+        setMarket((prev) => prev ?? MARKET_OFF);
+        return;
+      }
+      const j = await r.json();
+      setMarket({
+        floorBnb: j.floorBnb ?? null,
+        vol24hBnb: j.vol24hBnb ?? null,
+        totalVolBnb: j.totalVolBnb ?? null,
+        listed: j.listed ?? null,
+        owners: j.owners ?? null,
+        live: j.ok === true,
+      });
+    } catch {
+      setMarket((prev) => prev ?? MARKET_OFF);
+    }
+  }, []);
+  useEffect(() => {
+    loadMarket();
+    const t = setInterval(loadMarket, 60000);
+    return () => clearInterval(t);
+  }, [loadMarket]);
+
   // ---- wallet -------------------------------------------------------------
 
   const refreshHolder = useCallback(async (addr: Address) => {
@@ -651,6 +704,40 @@ export default function App() {
             🏆 Next out of the vault: {stats.nextPrizes.map((p) => `${p.name} (${p.typeName}, stat ${p.stat})`).join(" · ")}
           </p>
         )}
+      </div>
+
+      <div className="card">
+        <div className="title">Market · Element</div>
+        <div className="counters">
+          <div className="counter">
+            <div className="num">{fmtPrice(market?.floorBnb ?? null)}</div>
+            <div className="lbl">Floor price</div>
+          </div>
+          <div className="counter">
+            <div className="num">{fmtPrice(market?.vol24hBnb ?? null)}</div>
+            <div className="lbl">Volume · 24h</div>
+          </div>
+          <div className="counter">
+            <div className="num">{fmtPrice(market?.totalVolBnb ?? null)}</div>
+            <div className="lbl">Total volume</div>
+          </div>
+          <div className="counter">
+            <div className="num">{market?.listed ?? "—"}</div>
+            <div className="lbl">Listed for sale</div>
+          </div>
+          <div className="counter">
+            <div className="num">{market?.owners ?? "—"}</div>
+            <div className="lbl">Owners</div>
+          </div>
+        </div>
+        <p className="meta" style={{ marginTop: 10 }}>
+          <a href={ELEMENT_COLLECTION_URL} target="_blank" rel="noreferrer">
+            Trade Agent X Robot on Element ↗
+          </a>
+          {market && !market.live
+            ? " · Live floor & volume light up once the Element API key is connected."
+            : ""}
+        </p>
       </div>
 
       {error && <p className="error">{error}</p>}
