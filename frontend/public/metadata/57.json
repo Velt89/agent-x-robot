@@ -1,0 +1,36 @@
+{
+  "name": "AXR Jetpack - Uncommon",
+  "description": "Agent X Robot on BNB Chain: your Agent ID's fighter. Draw parts, fuse and overclock them, equip your robot and duel other agents. The owner cannot withdraw the pool or change the rules.",
+  "image": "https://agent-x-robot.vercel.app/art/tokens/57.png",
+  "external_url": "https://agent-x-robot.vercel.app/",
+  "attributes": [
+    {
+      "trait_type": "Kind",
+      "value": "Accessory"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Jetpack"
+    },
+    {
+      "trait_type": "Stat",
+      "value": "EVA"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Stat Value",
+      "value": 5
+    },
+    {
+      "trait_type": "Overclock",
+      "value": 0
+    },
+    {
+      "trait_type": "Champion Edition",
+      "value": "No"
+    }
+  ]
+}

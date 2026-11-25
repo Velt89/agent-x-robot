@@ -1,0 +1,44 @@
+{
+  "name": "CE-02 BASTION (Visor)",
+  "description": "Agent X Robot on BNB Chain: your Agent ID's fighter. Draw parts, fuse and overclock them, equip your robot and duel other agents. The owner cannot withdraw the pool or change the rules.",
+  "image": "https://agent-x-robot.vercel.app/art/tokens/1.png",
+  "external_url": "https://agent-x-robot.vercel.app/",
+  "attributes": [
+    {
+      "trait_type": "Kind",
+      "value": "Accessory"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Visor"
+    },
+    {
+      "trait_type": "Stat",
+      "value": "ACC"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Stat Value",
+      "value": 71
+    },
+    {
+      "trait_type": "Overclock",
+      "value": 0
+    },
+    {
+      "trait_type": "Champion Edition",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Name",
+      "value": "BASTION"
+    },
+    {
+      "trait_type": "Serial",
+      "value": "CE-02"
+    }
+  ]
+}

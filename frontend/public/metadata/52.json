@@ -1,0 +1,20 @@
+{
+  "name": "Agent X Robot #2",
+  "description": "Agent X Robot on BNB Chain: your Agent ID's fighter. Draw parts, fuse and overclock them, equip your robot and duel other agents. The owner cannot withdraw the pool or change the rules.",
+  "image": "https://agent-x-robot.vercel.app/art/tokens/52.png",
+  "external_url": "https://agent-x-robot.vercel.app/",
+  "attributes": [
+    {
+      "trait_type": "Kind",
+      "value": "Robot"
+    },
+    {
+      "trait_type": "Chassis",
+      "value": 228
+    },
+    {
+      "trait_type": "Equipped",
+      "value": "None"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"rewrites":[{"destination":"/metadata/:id.json","source":"/metadata/:id"}]}

@@ -1,0 +1,44 @@
+{
+  "name": "CE-40 ANVIL (Drone)",
+  "description": "Agent X Robot on BNB Chain: your Agent ID's fighter. Draw parts, fuse and overclock them, equip your robot and duel other agents. The owner cannot withdraw the pool or change the rules.",
+  "image": "https://agent-x-robot.vercel.app/art/tokens/39.png",
+  "external_url": "https://agent-x-robot.vercel.app/",
+  "attributes": [
+    {
+      "trait_type": "Kind",
+      "value": "Accessory"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Drone"
+    },
+    {
+      "trait_type": "Stat",
+      "value": "LUCK"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Stat Value",
+      "value": 95
+    },
+    {
+      "trait_type": "Overclock",
+      "value": 0
+    },
+    {
+      "trait_type": "Champion Edition",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Name",
+      "value": "ANVIL"
+    },
+    {
+      "trait_type": "Serial",
+      "value": "CE-40"
+    }
+  ]
+}
