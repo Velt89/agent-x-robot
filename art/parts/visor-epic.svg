@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<!-- Agent X Robot :: visor-epic :: overlay layer, align 1:1 with robot-base.svg -->
+<circle cx="500" cy="230" r="120" fill="#d08cff" fill-opacity="0.13" stroke="none"/>
+<rect x="376" y="196" width="248" height="68" rx="30" fill="#45157f" stroke="#10131a" stroke-width="9" stroke-linejoin="round" />
+<rect x="394" y="208" width="212" height="44" rx="20" fill="#0d1420" stroke="#10131a" stroke-width="6" stroke-linejoin="round" />
+<circle cx="368" cy="230" r="17" fill="#6d28c9" stroke="#10131a" stroke-width="7" />
+<circle cx="632" cy="230" r="17" fill="#6d28c9" stroke="#10131a" stroke-width="7" />
+<rect x="410" y="222" width="180" height="16" rx="8" fill="#d08cff"  stroke="none"/>
+<rect x="410" y="242" width="120" height="6" rx="3" fill="#e3b8ff" stroke="none"/>
+<line x1="420" y1="204" x2="580" y2="204" stroke="#d08cff" stroke-width="5" stroke-linecap="round" />
+<circle cx="500" cy="188" r="9" fill="#d08cff" stroke="#10131a" stroke-width="5" />
+</svg>

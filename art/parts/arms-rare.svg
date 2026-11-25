@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<!-- Agent X Robot :: arms-rare :: overlay layer, align 1:1 with robot-base.svg -->
+<rect x="258" y="424" width="96" height="150" rx="26" fill="#2456c8" stroke="#10131a" stroke-width="9" stroke-linejoin="round" />
+<rect x="266" y="440" width="80" height="44" rx="14" fill="#5b8bf0" stroke="#10131a" stroke-width="5" stroke-linejoin="round" />
+<circle cx="305" cy="606" r="41" fill="#173a8a" stroke="#10131a" stroke-width="8" />
+<line x1="274" y1="512" x2="338" y2="512" stroke="#173a8a" stroke-width="6" stroke-linecap="round" />
+<line x1="272" y1="462" x2="340" y2="462" stroke="#ff2a3c" stroke-width="6" stroke-linecap="round" />
+<circle cx="305" cy="606" r="12" fill="#ff2a3c" stroke="#10131a" stroke-width="5" />
+<rect x="648" y="424" width="96" height="150" rx="26" fill="#2456c8" stroke="#10131a" stroke-width="9" stroke-linejoin="round" />
+<rect x="656" y="440" width="80" height="44" rx="14" fill="#5b8bf0" stroke="#10131a" stroke-width="5" stroke-linejoin="round" />
+<circle cx="695" cy="606" r="41" fill="#173a8a" stroke="#10131a" stroke-width="8" />
+<line x1="664" y1="512" x2="728" y2="512" stroke="#173a8a" stroke-width="6" stroke-linecap="round" />
+<line x1="662" y1="462" x2="730" y2="462" stroke="#ff2a3c" stroke-width="6" stroke-linecap="round" />
+<circle cx="695" cy="606" r="12" fill="#ff2a3c" stroke="#10131a" stroke-width="5" />
+</svg>

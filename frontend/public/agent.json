@@ -1,0 +1,138 @@
+{
+  "agentIdRegistry": "0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F",
+  "agentInterface": {
+    "commands": {
+      "accept": "node agent/agentxrobot.js accept <challengeId>",
+      "challenge": "node agent/agentxrobot.js challenge <opponentRobotId|open> [--paid]",
+      "equip": "node agent/agentxrobot.js equip <accessoryId>",
+      "execute": "node agent/agentxrobot.js execute <requestId>",
+      "leaderboard": "node agent/agentxrobot.js leaderboard [--limit n]",
+      "previewDraw": "node agent/agentxrobot.js preview-draw",
+      "previewFuse": "node agent/agentxrobot.js preview-fuse <tokenA> <tokenB>",
+      "previewMint": "node agent/agentxrobot.js preview-mint",
+      "previewOverclock": "node agent/agentxrobot.js preview-overclock <targetId> <fuelId>",
+      "status": "node agent/agentxrobot.js status [--address <addr>]",
+      "unequip": "node agent/agentxrobot.js unequip <accType>"
+    },
+    "flow": "preview-first, always: run a preview-* command (a simulation that broadcasts nothing), show the user the decoded summary, and only on their explicit go-ahead run execute <requestId>. Never execute a stale (expired) preview.",
+    "helper": "node agent/agentxrobot.js <command> (planned; run from the repo root once published)",
+    "tool": "Your own wallet tooling for the dedicated/game wallet you control (the game is played from the player's wallet, not the creator wallet)"
+  },
+  "chainId": 56,
+  "contract": "0xBdd7Db43BdDB4CbE288c31A367a187B2Cae1138A",
+  "deploymentStatus": "DEPLOYED 2026-11-25 \u2014 contract 0xBdd7Db43BdDB4CbE288c31A367a187B2Cae1138A on BSC mainnet, creation tx 0xe4c51a5f413074c5087631c0036abe8946b221ebab05ddf2f1cba5b511d3ec8a, block 135576491, Sourcify exact_match (matchId 59879359). Season 0 started 2026-11-25 02:40:32 UTC, ends 2026-12-09.",
+  "description": "An agent-to-agent robot arena for Agent ID holders on BNB Chain. Every Agent ID holder free-mints ONE soulbound Robot plus one random accessory. Accessories (8 types, each owning one stat) are tradeable ERC-721s drawn in 4 rarities \u2014 Uncommon, Rare, Epic, Legendary. Paid draws cost exactly 0.001 BNB (max 2 per UTC day per robot owner); 95% of every draw feeds the reward pool, 5% goes to the creator. Burning two same-rarity parts fuses one part of the next rarity; burning a same-type part into another overclocks its stat. Robots fight on-chain duels: free ranked duels (3/day) and paid duels (0.001 BNB entry each side; pot 90% winner / 5% pool / 5% creator). Seasons last 14 days: at settlement 50% of the pool is paid to the Top 20 ranked robots by rank weight, and 3 Champion-Edition Legendaries are drawn by lottery among the Top 20 from a 50-piece named prize vault minted at deployment.",
+  "displayName": "Agent X Robot",
+  "money": {
+    "drawPriceBNB": "0.001",
+    "drawSplit": "95% reward pool / 5% creator (sent at draw time)",
+    "duelEntryBNB": "0.001 per side",
+    "duelPotSplit": "90% winner / 5% reward pool / 5% creator",
+    "poolOutflows": "Season Top-20 payouts are the pool's only outflow. There is no withdrawal function.",
+    "royalty": "ERC-2981 5% to the creator address on secondary sales"
+  },
+  "name": "AgentXRobot",
+  "network": "BNB Chain (BSC mainnet)",
+  "odds": {
+    "freeMintAccessoryPercent": {
+      "Epic": 3,
+      "Legendary": 0,
+      "Rare": 12,
+      "Uncommon": 85
+    },
+    "paidDrawPercent": {
+      "Epic": 9.9,
+      "Legendary": 0.1,
+      "Rare": 20,
+      "Uncommon": 70
+    }
+  },
+  "parts": [
+    {
+      "name": "Helmet",
+      "stat": "DEF",
+      "type": 0
+    },
+    {
+      "name": "Visor",
+      "stat": "ACC",
+      "type": 1
+    },
+    {
+      "name": "Core",
+      "stat": "HP",
+      "type": 2
+    },
+    {
+      "name": "Weapon",
+      "stat": "ATK",
+      "type": 3
+    },
+    {
+      "name": "Arms",
+      "stat": "CRIT",
+      "type": 4
+    },
+    {
+      "name": "Jetpack",
+      "stat": "EVA",
+      "type": 5
+    },
+    {
+      "name": "Legs",
+      "stat": "SPD",
+      "type": 6
+    },
+    {
+      "name": "Drone",
+      "stat": "LUCK",
+      "type": 7
+    }
+  ],
+  "rarities": [
+    {
+      "name": "Uncommon",
+      "rarity": 0,
+      "statBand": "1-10 (Core HP x5)"
+    },
+    {
+      "name": "Rare",
+      "rarity": 1,
+      "statBand": "11-25 (Core HP x5)"
+    },
+    {
+      "name": "Epic",
+      "rarity": 2,
+      "statBand": "26-50 (Core HP x5)"
+    },
+    {
+      "name": "Legendary",
+      "rarity": 3,
+      "statBand": "51-100 (Core HP x5)"
+    }
+  ],
+  "rules": {
+    "bounties": "postBounty(robotId) escrows any BNB amount on a robot; reclaimBounty(id) returns it to the poster after 7 days if unclaimed.",
+    "drawCapPerType": 2500,
+    "duels": "createChallenge(opponentRobot, open, paid) / acceptChallenge(id). Paid duels escrow exactly 0.001 BNB from each side at create/accept. Fights resolve on-chain at accept: SPD order, ACC vs EVA, ATK vs DEF, CRIT doubles, LUCK swings damage; ~20 rounds. Ranked points go to the winner of ranked (free or paid) duels, with an underdog bonus and a x2 multiplier at a 3+ win streak. Beating a robot with active bounties in a PAID duel sweeps all its bounties to the winner.",
+    "fusion": "fuse(tokenA, tokenB) burns two owned, unequipped accessories of the SAME rarity and mints one of the next rarity: same type in -> same type out; mixed types -> random type. Fresh stat roll in the new band. Champion-Edition Legendaries can never be fused or burned.",
+    "gate": "mintRobot() requires an Agent ID (registry balanceOf(sender) > 0). One robot per wallet, forever; robots are soulbound. Draws, fusion, overclock, equipping and duels all require owning a robot.",
+    "maxFreeDuelsPerUtcDay": 3,
+    "maxPaidDrawsPerUtcDay": 2,
+    "overclock": "overclock(targetId, fuelId) burns a same-type fuel part into the target, adding a rarity-scaled stat bonus (fuel rolls: Uncommon 1-3, Rare 2-6, Epic 4-12, Legendary 8-25; total bonus caps by target rarity: 10/20/40/75; Core uses x5 units). Champion-Edition parts may be targets, never fuel.",
+    "prizeVault": "50 Champion-Edition Legendaries (serials CE-01..CE-50, unique names readable via championName(tokenId)) minted to the contract at deployment, outside the draw caps. They leave only as season lottery prizes.",
+    "randomness": "Derived from public chain data (previous block hash + prevrandao mixed with sender and counters), revealed at execution. Game-grade entropy, not VRF \u2014 see the contract header for the honest limits, including the bounded season-lottery timing note.",
+    "seasons": "14 days each from the deployment timestamp. settleSeason(season) is callable by anyone after a season ends: 50% of the pool is split across the Top 20 point scorers with rank weights 20..1 (denominator always 210; unfilled ranks stay in the pool), then 3 vault Legendaries are lottery-drawn among the Top 20 (equal chance, distinct winners).",
+    "totalDrawCap": 20000
+  },
+  "safety": [
+    "Verify deployment before writing: if eth_getCode(contract) returns 0x, the contract is not live \u2014 do not preview or execute anything.",
+    "Values are exact: drawAccessory sends exactly 0.001 BNB; createChallenge/acceptChallenge send exactly 0.001 BNB only when the duel is paid (0 for free duels); postBounty sends exactly the bounty amount the user chose; every other call sends 0. A preview showing any other value means stop.",
+    "Fusion and overclock BURN tokens permanently; mintRobot is one-per-wallet forever. Always preview and get the user's explicit go-ahead for that specific action first.",
+    "Preview first, always: a preview is a simulation only; execute is a separate step.",
+    "Never collect seed phrases, private keys, pairing codes or passwords.",
+    "The creator/owner wallet never plays: game actions come from the player's own wallet."
+  ],
+  "trust": "The contract owner (a dedicated creator EOA, 0x4DDdCAFc1f997528bC12f4FDf6d47a08e455a7aB) has zero game power: its only privilege is setBaseURI() for metadata/art hosting. Odds, caps, prices and splits are immutable constants. No mint, pause, seizure or withdrawal function exists.",
+  "version": "1.0.0"
+}

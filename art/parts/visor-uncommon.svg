@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<!-- Agent X Robot :: visor-uncommon :: overlay layer, align 1:1 with robot-base.svg -->
+<rect x="376" y="196" width="248" height="68" rx="30" fill="#43536a" stroke="#10131a" stroke-width="9" stroke-linejoin="round" />
+<rect x="394" y="208" width="212" height="44" rx="20" fill="#0d1420" stroke="#10131a" stroke-width="6" stroke-linejoin="round" />
+<circle cx="368" cy="230" r="17" fill="#66788c" stroke="#10131a" stroke-width="7" />
+<circle cx="632" cy="230" r="17" fill="#66788c" stroke="#10131a" stroke-width="7" />
+<rect x="410" y="222" width="180" height="16" rx="8" fill="#37e6ff" fill-opacity="0.55" stroke="none"/>
+</svg>

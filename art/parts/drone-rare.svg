@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<!-- Agent X Robot :: drone-rare :: overlay layer, align 1:1 with robot-base.svg -->
+<circle cx="818" cy="208" r="98" fill="#ff2a3c" fill-opacity="0.15" stroke="none"/>
+<ellipse cx="818" cy="208" rx="94" ry="30" fill="none" stroke="#173a8a" stroke-width="7"/>
+<circle cx="818" cy="208" r="62" fill="#2456c8" stroke="#10131a" stroke-width="9" />
+<path d="M770,168 Q818,140 866,168 L866,190 Q818,168 770,190 Z" fill="#5b8bf0" stroke="#10131a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+<circle cx="818" cy="214" r="27" fill="#102a63" stroke="#10131a" stroke-width="6" />
+<circle cx="818" cy="214" r="14" fill="#ff2a3c" stroke="#10131a" stroke-width="4" />
+<circle cx="742" cy="148" r="12" fill="#173a8a" stroke="#10131a" stroke-width="5" />
+<line x1="728" y1="148" x2="756" y2="148" stroke="#173a8a" stroke-width="5" stroke-linecap="round" />
+<circle cx="894" cy="148" r="12" fill="#173a8a" stroke="#10131a" stroke-width="5" />
+<line x1="880" y1="148" x2="908" y2="148" stroke="#173a8a" stroke-width="5" stroke-linecap="round" />
+<circle cx="742" cy="268" r="12" fill="#173a8a" stroke="#10131a" stroke-width="5" />
+<line x1="728" y1="268" x2="756" y2="268" stroke="#173a8a" stroke-width="5" stroke-linecap="round" />
+<circle cx="894" cy="268" r="12" fill="#173a8a" stroke="#10131a" stroke-width="5" />
+<line x1="880" y1="268" x2="908" y2="268" stroke="#173a8a" stroke-width="5" stroke-linecap="round" />
+<line x1="818" y1="146" x2="818" y2="118" stroke="#10131a" stroke-width="7" stroke-linecap="round" />
+<circle cx="818" cy="108" r="9" fill="#ff2a3c" stroke="#10131a" stroke-width="5" />
+<line x1="772" y1="252" x2="864" y2="252" stroke="#ff2a3c" stroke-width="5" stroke-linecap="round" />
+<circle cx="760" cy="208" r="7" fill="#ff2a3c" stroke="#10131a" stroke-width="3" />
+<circle cx="876" cy="208" r="7" fill="#ff2a3c" stroke="#10131a" stroke-width="3" />
+</svg>

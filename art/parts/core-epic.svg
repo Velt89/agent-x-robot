@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<!-- Agent X Robot :: core-epic :: overlay layer, align 1:1 with robot-base.svg -->
+<circle cx="500" cy="425" r="128" fill="#d08cff" fill-opacity="0.16" stroke="none"/>
+<circle cx="500" cy="425" r="86" fill="#45157f" stroke="#10131a" stroke-width="9" />
+<circle cx="500" cy="425" r="71" fill="#6d28c9" stroke="#10131a" stroke-width="7" />
+<circle cx="500" cy="425" r="52" fill="#d08cff" stroke="#10131a" stroke-width="6" />
+<circle cx="500" cy="425" r="22" fill="#f4e6ff" stroke="#10131a" stroke-width="5" />
+<circle cx="446" cy="371" r="6" fill="#2e0d57" stroke="none"/><circle cx="554" cy="371" r="6" fill="#2e0d57" stroke="none"/><circle cx="446" cy="479" r="6" fill="#2e0d57" stroke="none"/><circle cx="554" cy="479" r="6" fill="#2e0d57" stroke="none"/>
+<path d="M500,344 A81,81 0 0 1 570,375" fill="none" stroke="#d08cff" stroke-width="7" stroke-linecap="round"/>
+<path d="M500,506 A81,81 0 0 1 430,475" fill="none" stroke="#d08cff" stroke-width="7" stroke-linecap="round"/>
+<circle cx="500" cy="425" r="34" fill="#e3b8ff" stroke="#10131a" stroke-width="4" fill-opacity="0.5"/>
+</svg>

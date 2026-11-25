@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<!-- Agent X Robot :: arms-legendary :: overlay layer, align 1:1 with robot-base.svg -->
+<circle cx="305" cy="520" r="95" fill="#fff3b0" fill-opacity="0.1" stroke="none"/>
+<rect x="258" y="424" width="96" height="150" rx="26" fill="#e8a90c" stroke="#10131a" stroke-width="9" stroke-linejoin="round" />
+<rect x="266" y="440" width="80" height="44" rx="14" fill="#ffd94d" stroke="#10131a" stroke-width="5" stroke-linejoin="round" />
+<circle cx="305" cy="606" r="41" fill="#a87400" stroke="#10131a" stroke-width="8" />
+<line x1="274" y1="512" x2="338" y2="512" stroke="#a87400" stroke-width="6" stroke-linecap="round" />
+<line x1="272" y1="462" x2="340" y2="462" stroke="#fff3b0" stroke-width="6" stroke-linecap="round" />
+<circle cx="305" cy="606" r="12" fill="#fff3b0" stroke="#10131a" stroke-width="5" />
+<rect x="278" y="528" width="56" height="26" rx="8" fill="#ffd94d" stroke="#10131a" stroke-width="4" stroke-linejoin="round" />
+<line x1="282" y1="588" x2="330" y2="588" stroke="#fff3b0" stroke-width="5" stroke-linecap="round" />
+<circle cx="287" cy="592" r="8" fill="#ffffff" stroke="#10131a" stroke-width="3" />
+<circle cx="323" cy="592" r="8" fill="#ffffff" stroke="#10131a" stroke-width="3" />
+<path d="M278,436 Q305,420 334,436" fill="none" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke="#a87400" stroke-opacity="0.6"/>
+<circle cx="695" cy="520" r="95" fill="#fff3b0" fill-opacity="0.1" stroke="none"/>
+<rect x="648" y="424" width="96" height="150" rx="26" fill="#e8a90c" stroke="#10131a" stroke-width="9" stroke-linejoin="round" />
+<rect x="656" y="440" width="80" height="44" rx="14" fill="#ffd94d" stroke="#10131a" stroke-width="5" stroke-linejoin="round" />
+<circle cx="695" cy="606" r="41" fill="#a87400" stroke="#10131a" stroke-width="8" />
+<line x1="664" y1="512" x2="728" y2="512" stroke="#a87400" stroke-width="6" stroke-linecap="round" />
+<line x1="662" y1="462" x2="730" y2="462" stroke="#fff3b0" stroke-width="6" stroke-linecap="round" />
+<circle cx="695" cy="606" r="12" fill="#fff3b0" stroke="#10131a" stroke-width="5" />
+<rect x="668" y="528" width="56" height="26" rx="8" fill="#ffd94d" stroke="#10131a" stroke-width="4" stroke-linejoin="round" />
+<line x1="672" y1="588" x2="720" y2="588" stroke="#fff3b0" stroke-width="5" stroke-linecap="round" />
+<circle cx="677" cy="592" r="8" fill="#ffffff" stroke="#10131a" stroke-width="3" />
+<circle cx="713" cy="592" r="8" fill="#ffffff" stroke="#10131a" stroke-width="3" />
+<path d="M668,436 Q695,420 724,436" fill="none" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke="#a87400" stroke-opacity="0.6"/>
+</svg>

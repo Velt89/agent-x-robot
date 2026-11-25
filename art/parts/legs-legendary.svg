@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<!-- Agent X Robot :: legs-legendary :: overlay layer, align 1:1 with robot-base.svg -->
+<rect x="378" y="598" width="109" height="168" rx="22" fill="#e8a90c" stroke="#10131a" stroke-width="9" stroke-linejoin="round" />
+<rect x="385" y="762" width="95" height="140" rx="18" fill="#a87400" stroke="#10131a" stroke-width="9" stroke-linejoin="round" />
+<path d="M360,950 L505,950 L505,900 L376,900 Q360,900 360,924 Z" fill="#75500a" stroke="#10131a" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" />
+<circle cx="432" cy="766" r="26" fill="#ffd94d" stroke="#10131a" stroke-width="7" />
+<line x1="398" y1="630" x2="398" y2="730" stroke="#a87400" stroke-width="6" stroke-linecap="round" />
+<rect x="423" y="776" width="19" height="104" rx="9" fill="#fff3b0" stroke="none"/>
+<line x1="374" y1="934" x2="491" y2="934" stroke="#fff3b0" stroke-width="6" stroke-linecap="round" />
+<rect x="436" y="620" width="34" height="120" rx="10" fill="#ffd94d" stroke="#10131a" stroke-width="4" stroke-linejoin="round" />
+<line x1="397" y1="800" x2="419" y2="800" stroke="#fff3b0" stroke-width="5" stroke-linecap="round" />
+<line x1="446" y1="830" x2="468" y2="830" stroke="#fff3b0" stroke-width="5" stroke-linecap="round" />
+<path d="M402,650 Q432,690 402,730" fill="none" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke="#a87400" stroke-opacity="0.6"/>
+<circle cx="432" cy="766" r="10" fill="#ffffff" stroke="#10131a" stroke-width="4" />
+<rect x="380" y="906" width="105" height="10" rx="5" fill="#fff3b0" fill-opacity="0.7" stroke="none"/>
+<rect x="513" y="598" width="109" height="168" rx="22" fill="#e8a90c" stroke="#10131a" stroke-width="9" stroke-linejoin="round" />
+<rect x="520" y="762" width="95" height="140" rx="18" fill="#a87400" stroke="#10131a" stroke-width="9" stroke-linejoin="round" />
+<path d="M495,950 L640,950 L640,900 L511,900 Q495,900 495,924 Z" fill="#75500a" stroke="#10131a" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" />
+<circle cx="568" cy="766" r="26" fill="#ffd94d" stroke="#10131a" stroke-width="7" />
+<line x1="533" y1="630" x2="533" y2="730" stroke="#a87400" stroke-width="6" stroke-linecap="round" />
+<rect x="558" y="776" width="19" height="104" rx="9" fill="#fff3b0" stroke="none"/>
+<line x1="509" y1="934" x2="626" y2="934" stroke="#fff3b0" stroke-width="6" stroke-linecap="round" />
+<rect x="571" y="620" width="34" height="120" rx="10" fill="#ffd94d" stroke="#10131a" stroke-width="4" stroke-linejoin="round" />
+<line x1="532" y1="800" x2="554" y2="800" stroke="#fff3b0" stroke-width="5" stroke-linecap="round" />
+<line x1="581" y1="830" x2="603" y2="830" stroke="#fff3b0" stroke-width="5" stroke-linecap="round" />
+<path d="M537,650 Q567,690 537,730" fill="none" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke="#a87400" stroke-opacity="0.6"/>
+<circle cx="568" cy="766" r="10" fill="#ffffff" stroke="#10131a" stroke-width="4" />
+<rect x="515" y="906" width="105" height="10" rx="5" fill="#fff3b0" fill-opacity="0.7" stroke="none"/>
+</svg>

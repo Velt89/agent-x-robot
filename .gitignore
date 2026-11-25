@@ -1,0 +1,16 @@
+# Dependencies & build output
+node_modules/
+dist/
+cache/
+artifacts/
+*.tsbuildinfo
+
+# Secrets — NEVER commit
+wallet/
+.env
+*.pem
+*.key
+
+# Logs & editor files
+*.log
+.DS_Store

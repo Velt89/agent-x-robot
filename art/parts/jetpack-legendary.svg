@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<!-- Agent X Robot :: jetpack-legendary :: overlay layer, align 1:1 with robot-base.svg -->
+<circle cx="327" cy="540" r="70" fill="#fff3b0" fill-opacity="0.12" stroke="none"/>
+<circle cx="673" cy="540" r="70" fill="#fff3b0" fill-opacity="0.12" stroke="none"/>
+<rect x="271" y="232" width="112" height="236" rx="30" fill="#e8a90c" stroke="#10131a" stroke-width="9" stroke-linejoin="round" />
+<rect x="285" y="208" width="84" height="40" rx="14" fill="#a87400" stroke="#10131a" stroke-width="7" stroke-linejoin="round" />
+<rect x="287" y="300" width="80" height="26" rx="10" fill="#a87400" stroke="#10131a" stroke-width="5" stroke-linejoin="round" />
+<path d="M289,468 L365,468 L349,516 L305,516 Z" fill="#75500a" stroke="#10131a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="315" y="338" width="24" height="96" rx="12" fill="#fff3b0" stroke="none"/>
+<path d="M311,516 L327,566 L343,516 Z" fill="#fff3b0" stroke="#10131a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" fill-opacity="0.85"/>
+<circle cx="327" cy="272" r="13" fill="#fff3b0" stroke="#10131a" stroke-width="4" />
+<line x1="287" y1="420" x2="367" y2="420" stroke="#fff3b0" stroke-width="5" stroke-linecap="round" />
+<line x1="299" y1="250" x2="299" y2="440" stroke="#ffe066" stroke-width="4" stroke-linecap="round" />
+<line x1="355" y1="250" x2="355" y2="440" stroke="#ffe066" stroke-width="4" stroke-linecap="round" />
+<circle cx="327" cy="272" r="6" fill="#ffffff" stroke="#10131a" stroke-width="3" />
+<rect x="617" y="232" width="112" height="236" rx="30" fill="#e8a90c" stroke="#10131a" stroke-width="9" stroke-linejoin="round" />
+<rect x="631" y="208" width="84" height="40" rx="14" fill="#a87400" stroke="#10131a" stroke-width="7" stroke-linejoin="round" />
+<rect x="633" y="300" width="80" height="26" rx="10" fill="#a87400" stroke="#10131a" stroke-width="5" stroke-linejoin="round" />
+<path d="M635,468 L711,468 L695,516 L651,516 Z" fill="#75500a" stroke="#10131a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="661" y="338" width="24" height="96" rx="12" fill="#fff3b0" stroke="none"/>
+<path d="M657,516 L673,566 L689,516 Z" fill="#fff3b0" stroke="#10131a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" fill-opacity="0.85"/>
+<circle cx="673" cy="272" r="13" fill="#fff3b0" stroke="#10131a" stroke-width="4" />
+<line x1="633" y1="420" x2="713" y2="420" stroke="#fff3b0" stroke-width="5" stroke-linecap="round" />
+<line x1="645" y1="250" x2="645" y2="440" stroke="#ffe066" stroke-width="4" stroke-linecap="round" />
+<line x1="701" y1="250" x2="701" y2="440" stroke="#ffe066" stroke-width="4" stroke-linecap="round" />
+<circle cx="673" cy="272" r="6" fill="#ffffff" stroke="#10131a" stroke-width="3" />
+<rect x="452" y="250" width="96" height="60" rx="14" fill="#a87400" stroke="#10131a" stroke-width="7" stroke-linejoin="round" />
+</svg>
