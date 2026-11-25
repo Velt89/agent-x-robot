@@ -3,6 +3,7 @@ import {
   createPublicClient,
   createWalletClient,
   custom,
+  fallback,
   formatEther,
   http,
   parseAbiItem,
@@ -47,7 +48,22 @@ declare global {
   }
 }
 
-const publicClient = createPublicClient({ chain: CHAIN, transport: http() });
+// BSC public RPCs rotate on failure: a single default endpoint (viem's
+// bsc-dataseed) 403s/rate-limits from browsers, and one failed read used to
+// zero out every hero counter (loadStats swallows the error). Fallback
+// transport retries the next endpoint instead.
+const publicClient = createPublicClient({
+  chain: CHAIN,
+  transport: fallback(
+    [
+      http("https://bsc-dataseed.binance.org"),
+      http("https://bsc-dataseed1.bnbchain.org"),
+      http("https://bsc-dataseed2.bnbchain.org"),
+      http("https://bsc-rpc.publicnode.com"),
+    ],
+    { retryCount: 2 },
+  ),
+});
 const DEPLOYED = AXR_DEPLOYED;
 const EMPTY_SLOT = (1n << 256n) - 1n; // equippedInSlot sentinel for "no item"
 
@@ -598,7 +614,7 @@ export default function App() {
           <div className="lbl">Reward pool (50% pays out each season)</div>
         </div>
         <div className="counter">
-          <div className="num">{stats ? stats.totalDrawn.toLocaleString() : "0"}</div>
+          <div className="num">{stats ? stats.totalDrawn.toLocaleString() : "—"}</div>
           <div className="lbl">Parts drawn of 20,000 cap</div>
         </div>
         <div className="counter">
